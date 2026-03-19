@@ -110,6 +110,55 @@ main {
   gap: var(--space-1);
 }
 
+.doc-links-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-3);
+}
+
+.doc-body h1,
+.doc-body h2,
+.doc-body h3,
+.doc-body h4,
+.doc-body h5,
+.doc-body h6 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.doc-body p {
+  margin-bottom: var(--space-2);
+}
+
+.doc-body ul {
+  margin-bottom: var(--space-2);
+  padding-left: 1.25rem;
+}
+
+.doc-body li {
+  margin-bottom: 0.3rem;
+}
+
+.doc-body table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: var(--space-3);
+}
+
+.doc-body th,
+.doc-body td {
+  border: var(--border-width) solid var(--border);
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.doc-body th {
+  font-weight: 700;
+}
+
 a {
   color: var(--text);
   text-decoration: underline;
