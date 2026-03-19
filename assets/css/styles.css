@@ -1,0 +1,141 @@
+:root {
+  --bg: #095122;
+  --text: #ffffff;
+  --border: #ffffff;
+  --border-width: 2px;
+  --radius: 5px;
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.25rem;
+  --space-5: 1.5rem;
+  --max-width: 600px;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src: url("../fonts/inria-sans/InriaSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src: url("../fonts/inria-sans/InriaSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  box-shadow: none !important;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+strong,
+span,
+label,
+small {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Inria Sans", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: var(--space-5) var(--space-3);
+}
+
+main {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.card {
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  padding: var(--space-4);
+}
+
+.title,
+.section-title,
+.label,
+.doc-link,
+.back-link {
+  font-weight: 700;
+}
+
+.section-title {
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  margin-bottom: var(--space-2);
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.inline-gap {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.doc-links {
+  display: grid;
+  gap: var(--space-1);
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--border);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.company-logo {
+  display: block;
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 var(--space-2);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: var(--space-3);
+  }
+
+  .card {
+    padding: var(--space-3);
+  }
+}
