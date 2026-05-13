@@ -2,11 +2,10 @@
 
 **Terms of Service**
 
-*Effective Date: March 20, 2026*
 
-*Last Updated: March 20, 2026*
+*Last Updated: March 27, 2026*
 
-Welcome to Moss Calendar. These Terms of Service ("Terms") govern your access to and use of the services provided by Moss Labs Co., Ltd. ("Moss Labs," "we," "us," or "our"), including our mobile application, website located at https://mosslabs.kr, and all related features, content, and services (collectively, the "Service").
+Welcome to Moss Calendar. These Terms of Service ("Terms") govern your access to and use of the services provided by Moss Labs Co., Ltd. ("Moss Labs," "we," "us," or "our"), including our mobile application, website located at https://moss.events, and all related features, content, and services (collectively, the "Service").
 
 By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use the Service.
 

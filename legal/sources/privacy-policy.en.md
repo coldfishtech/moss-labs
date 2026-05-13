@@ -2,11 +2,10 @@
 
 **Privacy Policy**
 
-*Effective Date: March 20, 2026*
 
-*Last Updated: March 20, 2026*
+*Last Updated: March 27, 2026*
 
-This Privacy Policy describes how Moss Labs Co., Ltd. ("Moss Labs," "we," "us," or "our") collects, uses, shares, and protects personal information through the Moss Calendar mobile application, our website at https://mosslabs.kr, and all related services (collectively, the "Service").
+This Privacy Policy describes how Moss Labs Co., Ltd. ("Moss Labs," "we," "us," or "our") collects, uses, shares, and protects personal information through the Moss Calendar mobile application, our website at https://moss.events, and all related services (collectively, the "Service").
 
 This Privacy Policy is provided in accordance with the Personal Information Protection Act (개인정보보호법, "PIPA") of the Republic of Korea and other applicable data protection laws.
 
@@ -26,7 +25,11 @@ When you create an account or use the Service, we may collect the following cate
 
 • Email address
 
-• Account credentials provided through third-party authentication services (Apple Sign-In, Google OAuth)
+• Account credentials provided through third-party authentication services (Apple Sign-In, Google OAuth) and one-time email code sign-in
+
+**Calendar Access and Relationship Data**
+
+• Calendar privacy settings and follower relationship records (such as follow requests, approvals, denials, revocations, and related timestamps)
 
 **User-Generated Content**
 
@@ -36,6 +39,10 @@ When you create an account or use the Service, we may collect the following cate
 
 • Links you submit to the Service for event creation
 
+• Link-related content needed to create an event draft (such as captions/text, media references, and extracted event fields)
+
+• Import diagnostics (status, errors, and quality/confidence signals)
+
 • Profile information you voluntarily provide (biography, interests)
 
 **Communications**
@@ -43,6 +50,16 @@ When you create an account or use the Service, we may collect the following cate
 • Information you provide when you contact us for support or feedback
 
 • Responses to surveys or questionnaires, if any
+
+**Preferences**
+
+• Notification preferences and communication consent preferences (where enabled)
+
+• Location selection used to scope the shared calendar feed (including city/country text you provide when selecting "Other")
+
+• Interest records for locations where shared calendar support is not yet active (used to notify you when support is added)
+
+Profile routes and calendar feeds may be publicly accessible unless a user enables private calendar settings (where enabled). When a calendar is private, events added by that user are visible only to approved followers. However, private users' pinned event activity metadata may still appear in pin history and pin counts.
 
 ## **1.2 Information Collected Automatically**
 
@@ -68,7 +85,7 @@ When you access or use the Service, we automatically collect certain information
 
 **Analytics Data**
 
-We use Vercel Analytics to collect anonymized usage data about how users interact with the Service. This includes page views, session duration, and general interaction patterns. Vercel Analytics is designed to collect analytics data without using cookies and without collecting personally identifiable information.
+We collect product usage and technical diagnostics (for example feature interactions, page/screen events, device/browser/app context, and error traces) to run, troubleshoot, and improve the service.
 
 ## **1.3 Information from Third-Party Authentication Services**
 
@@ -89,13 +106,23 @@ We use your personal information for the following purposes:
 | Account creation and management | Account information |
 | Providing and operating the Service | Account information, user-generated content, device information, usage information |
 | Personalizing your experience | Usage information, user-generated content |
-| Sending push notifications about events and Service updates | Account information, device information |
+| Managing follow relationships and private calendar access controls (where enabled) | Account information, follower relationship records, calendar privacy settings |
+| Operating pin history and pin count features, including pin metadata for private-calendar users (where enabled) | Pin activity metadata, account identifiers, event identifiers |
+| Sending push notifications about events and Service updates (where enabled) | Account information, device information |
+| Providing location-scoped shared calendar feeds and handling inactive-location waitlist interest | Location selection data, location state metadata, optional city/country text for "Other" location, location-interest records |
+| Sending authentication and transactional service emails (for example one-time sign-in codes and account/security notices) | Account information, email address, message delivery metadata |
+| Recording legal-version acceptance and optional communication/marketing consent decisions | Account information, communications, consent metadata (timestamps, version labels, preference states) |
 | Responding to your inquiries and support requests | Account information, communications |
-| Improving and developing the Service | Usage information, analytics data, device information |
-| Detecting, preventing, and addressing fraud, abuse, security incidents, or technical issues | Account information, device information, usage information |
+| Product analytics and measurement | Usage information, analytics events, device and app context |
+| Error and performance monitoring | Technical diagnostics, error traces, device and app context |
+| Link-based event draft generation and import diagnostics | Submitted links, link-related content, extracted event fields, import diagnostics |
+| Improving and developing the Service | Usage information, analytics data, device information, import diagnostics |
+| Detecting, preventing, and addressing fraud, abuse, security incidents, or technical issues | Account information, device information, usage information, technical diagnostics |
 | Complying with legal obligations | Any information as required by law |
 
 We do not use your personal information for automated decision-making or profiling that produces legal or similarly significant effects.
+
+When you request an email address change, we may send verification messages to both your current email address and your new email address to prevent unauthorized account changes.
 
 # **3\. Sharing of Personal Information**
 
@@ -108,12 +135,24 @@ We may share your personal information with the following categories of third-pa
 | Supabase (database hosting — Seoul, ap-northeast-2 region) | Data storage and management | Account information, user-generated content |
 | Apple (authentication) | Account sign-in | Authentication tokens |
 | Google (authentication) | Account sign-in | Authentication tokens |
-| Vercel (hosting and analytics) | Service hosting, anonymized analytics | Anonymized usage data |
-| Apple Push Notification Service (APNs) | Push notifications | Device tokens, notification content |
+| Vercel (hosting) | Service hosting | Service request and response metadata |
+| PostHog (product analytics) | Product analytics and measurement | Product usage events, device/app context, event metadata |
+| Sentry (error and performance monitoring) | Error tracking, diagnostics, and performance monitoring | Technical diagnostics, error traces, device/app context |
+| Resend (email delivery infrastructure) | Delivering authentication and transactional service emails | Email address, message content required for delivery (such as one-time sign-in codes), delivery metadata |
+| Trusted content-processing providers | Retrieving and structuring link-based content for event draft creation | Submitted links, link-related content, import diagnostics |
+| Apple Push Notification Service (APNs, where enabled) | Push notifications | Device tokens, notification content |
 
 These service providers are contractually obligated to use your information only for the purposes of providing services to us and in accordance with applicable data protection laws.
 
-## **3.2 Legal Requirements**
+## **3.2 Sharing with Other Users (Service Visibility)**
+
+When you publish content in public areas, that content may be visible to other users and visitors to the Service.
+
+Where private calendar features are enabled, event details for private calendars are shared only with approved followers.
+
+For product transparency and consistency of shared activity metrics, pin history and pin count metadata for events pinned by private-calendar users may remain visible to other users even when private calendar event details are restricted.
+
+## **3.3 Legal Requirements**
 
 We may disclose your personal information if required to do so by law, regulation, legal process, or governmental request under the laws of the Republic of Korea, or when we believe in good faith that disclosure is necessary to:
 
@@ -125,11 +164,11 @@ We may disclose your personal information if required to do so by law, regulatio
 
 (d) Enforce our Terms of Service.
 
-## **3.3 Business Transfers**
+## **3.4 Business Transfers**
 
 In the event of a merger, acquisition, reorganization, sale of assets, or bankruptcy, your personal information may be transferred as part of that transaction. We will notify you of any such change and any choices you may have regarding your personal information, in accordance with PIPA.
 
-## **3.4 No Sale of Personal Information**
+## **3.5 No Sale of Personal Information**
 
 We do not sell your personal information to third parties.
 
@@ -139,7 +178,11 @@ Your personal information is primarily stored in the Republic of Korea. Our data
 
 However, certain service providers may process your information in countries other than the Republic of Korea:
 
-**Vercel::** Web hosting and analytics services may involve servers located in various countries, including the United States.
+**Vercel::** Web hosting services may involve servers located in various countries, including the United States.
+
+**PostHog and Sentry::** Analytics and error/performance monitoring services may involve servers located in various countries, including the United States.
+
+**Resend::** Email delivery infrastructure services may involve servers located in various countries, including the United States.
 
 **Apple and Google::** Authentication services are operated globally by Apple Inc. and Google LLC, both headquartered in the United States.
 
@@ -161,6 +204,8 @@ We retain your personal information for the following periods:
 | :---- | :---- | :---- |
 | Account information | Duration of account \+ 30 days after deletion request | Service provision |
 | User-generated content | Duration of account \+ 30 days after deletion request | Service provision |
+| Follow relationship and private-calendar access-control records | Duration of account \+ 30 days after deletion request | Service provision and access control |
+| Pin activity metadata (including pin history and pin count records) | Duration of account \+ 30 days after deletion request | Service provision and feature integrity |
 | Usage and analytics data | 1 year from collection | Service improvement |
 | Communications (support inquiries) | 3 years from resolution | Act on Consumer Protection in Electronic Commerce (전자상거래 등에서의 소비자보호에 관한 법률), Article 6 |
 | Records of access logs | 3 months from creation | Protection of Communications Secrets Act (통신비밀보호법), Article 15-2 |
@@ -218,7 +263,7 @@ The Service is not intended for use by children under the age of fourteen (14). 
 
 ## **8.1 Cookies and Similar Technologies**
 
-Our website (mosslabs.kr) does not currently use cookies for tracking purposes. Vercel Analytics, our web analytics provider, operates without the use of cookies.
+We use essential cookies/local storage for sign-in flow continuity, session-related routing, invitation handling, and security. We may also use optional measurement technologies where required by law and user choice.
 
 Our mobile application may use local storage mechanisms, session tokens, authentication tokens, and similar technologies that are standard to iOS application operation. These technologies are used for purposes including maintaining your login session, storing your preferences, and enabling core app functionality. They are not used to track you across other applications or websites.
 
